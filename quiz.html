@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz - QuizMaster</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="quiz.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="overlay"></div>
+
+<section class="section quiz-section">
+  <div class="quiz-container">
+    <h3>Welcome, <span id="user-name"></span>!</h3>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+
+    <h2>Choose Your Quiz Topic</h2>
+    <select id="category-select">
+      <option value="9">General Knowledge</option>
+      <option value="18">Computer Science</option>
+      <option value="17">Science & Nature</option>
+      <option value="23">History</option>
+      <option value="22">Geography</option>
+      <option value="30">Science: Gadgets</option>
+    </select>
+    <button class="primary-cta" onclick="selectCategory()">Start Quiz</button>
+
+    <div id="quiz"></div>
+  </div>
+</section>
+
+<script src="quiz.js"></script>
+</body>
+</html>
